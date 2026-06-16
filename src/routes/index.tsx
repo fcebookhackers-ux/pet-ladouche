@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroDog from "@/assets/hero-dog.jpg";
 import serviceBanho from "@/assets/service-banho.jpg";
 import serviceTosa from "@/assets/service-tosa.jpg";
-import serviceSpa from "@/assets/service-spa.jpg";
+import serviceSpaAsset from "@/assets/ritual-spa.jpg.asset.json";
+const serviceSpa = serviceSpaAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
