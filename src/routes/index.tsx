@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroDog from "@/assets/hero-dog.jpg";
-import serviceBanho from "@/assets/service-banho.jpg";
+import heroDog from "@/assets/ladouche-01.webp";
+import serviceBanho from "@/assets/banho-aromatico.jpg";
 import serviceTosa from "@/assets/service-tosa.jpg";
-import serviceSpaAsset from "@/assets/ritual-spa.jpg.asset.json";
-const serviceSpa = serviceSpaAsset.url;
+import serviceSpa from "@/assets/ritual-spa.png";
+import apaixonadoPorPets from "@/assets/apaixonado-por-pets.jpg";
+import ladouche02 from "@/assets/ladouche-02.jpg";
+import ladouche03 from "@/assets/ladouche-03.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +37,7 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP_URL =
-  "https://wa.me/5516000000000?text=Olá!%20Gostaria%20de%20agendar%20um%20banho%20na%20La%20Douche";
+  "https://wa.me/5516981619404?text=Olá!%20Gostaria%20de%20agendar%20um%20banho%20na%20La%20Douche";
 const INSTAGRAM_URL = "https://www.instagram.com/_ladouche_/";
 
 function Landing() {
@@ -244,7 +246,7 @@ function About() {
         <div className="relative">
           <div className="aspect-square overflow-hidden rounded-[2rem] bg-gradient-sunset">
             <img
-              src={serviceTosa}
+              src={apaixonadoPorPets}
               alt="Poodle posando após a tosa"
               loading="lazy"
               width={1024}
@@ -290,7 +292,7 @@ function About() {
 }
 
 function Gallery() {
-  const imgs = [heroDog, serviceBanho, serviceSpa, serviceTosa, serviceBanho, serviceSpa];
+  const imgs = [heroDog, serviceBanho, serviceSpa, serviceTosa, ladouche02, ladouche03];
   return (
     <section id="galeria" className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
       <div className="flex items-end justify-between gap-6">
@@ -424,9 +426,9 @@ function Visit() {
     <section className="mx-auto max-w-6xl px-6 py-24 lg:px-10 lg:py-32">
       <div className="grid gap-12 rounded-[2.5rem] bg-foreground p-10 text-background shadow-card md:grid-cols-2 md:p-16">
         <div>
-          <p className="font-script text-2xl text-accent">à bientôt</p>
+          <p className="font-script text-2xl text-[#f86e14]">à bientôt</p>
           <h2 className="mt-2 text-4xl text-background md:text-5xl">
-            Venha nos visitar em<br /><em className="italic text-accent">Ribeirão Preto</em>.
+            Venha nos visitar em<br /><em className="italic text-[#f86e14]">Ribeirão Preto</em>.
           </h2>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-background/70">
             Atendimento somente com hora marcada. Reserve pelo WhatsApp ou mande uma DM no nosso
@@ -438,7 +440,7 @@ function Visit() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm text-accent-foreground transition hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-full bg-[#f86e14] px-6 py-3 text-sm text-white transition hover:opacity-90"
             >
               WhatsApp
             </a>
@@ -446,7 +448,7 @@ function Visit() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-background/30 px-6 py-3 text-sm text-background transition hover:border-accent hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-full border border-background/30 px-6 py-3 text-sm text-background transition hover:border-[#f86e14] hover:text-[#f86e14]"
             >
               @_ladouche_
             </a>
@@ -454,8 +456,8 @@ function Visit() {
         </div>
 
         <dl className="space-y-6 border-t border-background/15 pt-8 text-sm md:border-l md:border-t-0 md:pl-12 md:pt-0">
-          <Info label="Endereço" value="Ribeirão Preto · SP" />
-          <Info label="Horário" value="Terça a sábado · 9h às 18h" />
+          <Info label="Endereço" value="Av. Senador César Vergueiro 879, Ribeirão Preto" />
+          <Info label="Horário" value="Segunda a sábado · 9h às 18h" />
           <Info label="Atendimento" value="Apenas com agendamento" />
           <Info label="Pagamento" value="Pix, débito e crédito" />
         </dl>
