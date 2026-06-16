@@ -49,7 +49,7 @@
   --foreground: oklch(0.22 0.025 35);           /* deep espresso */
   --cream: oklch(0.965 0.018 78);
   --blush: oklch(0.88 0.04 30);                 /* soft peach */
-  --terracotta: oklch(0.62 0.13 35);            /* warm terracotta */
+  --terracotta: #01c6cf;                        /* ciano/turquesa */
   --gold: oklch(0.72 0.11 75);                  /* muted gold */
   --ink: oklch(0.22 0.025 35);
 
@@ -58,8 +58,8 @@
   --popover: oklch(0.99 0.008 80);
   --popover-foreground: var(--ink);
 
-  --primary: oklch(0.62 0.13 35);               /* terracotta */
-  --primary-foreground: oklch(0.98 0.01 80);
+  --primary: var(--terracotta);
+  --primary-foreground: oklch(0.18 0.018 35);
   --secondary: oklch(0.93 0.025 70);
   --secondary-foreground: var(--ink);
   --muted: oklch(0.94 0.02 75);
@@ -70,10 +70,10 @@
   --destructive-foreground: oklch(0.98 0.01 80);
   --border: oklch(0.88 0.02 65);
   --input: oklch(0.88 0.02 65);
-  --ring: oklch(0.62 0.13 35);
+  --ring: var(--terracotta);
 
-  --gradient-warm: linear-gradient(135deg, oklch(0.965 0.018 78), oklch(0.92 0.035 40));
-  --gradient-sunset: linear-gradient(160deg, oklch(0.88 0.04 30), oklch(0.72 0.11 55));
+  --gradient-warm: linear-gradient(135deg, oklch(0.965 0.018 78), oklch(0.92 0.05 195));
+  --gradient-sunset: linear-gradient(160deg, oklch(0.88 0.04 195), oklch(0.72 0.11 195));
   --shadow-soft: 0 30px 60px -30px color-mix(in oklab, var(--terracotta) 25%, transparent);
   --shadow-card: 0 20px 40px -24px color-mix(in oklab, var(--ink) 25%, transparent);
 }
@@ -85,7 +85,7 @@
   --card-foreground: oklch(0.96 0.015 75);
   --popover: oklch(0.22 0.02 35);
   --popover-foreground: oklch(0.96 0.015 75);
-  --primary: oklch(0.72 0.13 40);
+  --primary: var(--terracotta);
   --primary-foreground: oklch(0.18 0.018 35);
   --secondary: oklch(0.28 0.02 35);
   --secondary-foreground: oklch(0.96 0.015 75);
@@ -95,7 +95,7 @@
   --accent-foreground: oklch(0.18 0.018 35);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0.13 40);
+  --ring: var(--terracotta);
 }
 
 @layer base {
